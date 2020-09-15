@@ -22,6 +22,18 @@ public class CabDAOCommandLineRunner implements CommandLineRunner {
         cab.setLatitude((float) 37.788654783559);
         cab.setLongitude((float) -122.50747748978);
         cabRepository.save(cab);
-        log.info("New cab is created" + cab);
+        log.info("New cab is created.." + cab);
+
+        cab = new Cab();
+        cab.setLatitude((float) 57.778952285851);
+        cab.setLongitude((float) -12.3333333333);
+        cabRepository.save(cab);
+        log.info("New cab is created.." + cab);
+
+        cab = new Cab();
+        cab.setLatitude((float) 37.099895225851);
+        cab.setLongitude((float) -42.3333333333);
+        cabRepository.save(cab);
+        log.info("New cab is created.." + cab);
     }
 }
